@@ -1,0 +1,92 @@
+$primary: #2F7BEA;
+body{
+    padding: 1rem;
+}
+.normal{
+    font-size: 1.4rem;
+    letter-spacing: .5vh;
+    font-weight: 100;
+    color: $primary;
+
+    @media only screen and(max-width:800px ){display: none;}
+}
+
+.header{
+    height: 70vh;
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) ,url(/img/pexels-steve-johnson-1269968.jpg);
+    background-size: cover;
+
+    &-details{
+        color: rgb(223, 217, 217);
+        width: 50%;
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+}
+.head-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.display-4{
+    color: rgb(240, 236, 236);
+    display: inline-block;
+}
+.display-5{
+    color: rgb(236, 234, 234);
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primary;
+}
+.profile{
+   // padding: 5rem 0;
+    background-color: rgb(226, 220, 220);
+}
+
+.text{
+    display: inline;
+    margin-left: 1rem;
+}
+.lead{
+    color: rgb(250, 248, 248);
+}
+.vission,
+.mission{
+    text-align: center;
+    background-color: $primary;
+    width: 100%;
+    margin-left: 0rem;
+}
+.mission{
+    background-color: rgb(44, 43, 43);
+}
+.service{
+   background-color: #2F7BEA;
+}
+.btn{
+    text-transform: uppercase;
+    font-weight: 500 ;
+    border: none;
+
+    span{
+        margin-left: .3rem;
+        transition: all .3s;
+    }
+}
+.btn:focus,
+.btn:active{
+    outline: none;
+    border: none;
+}
+.btn:hover span{
+    margin-left: .7rem;
+}
